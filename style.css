@@ -110,7 +110,7 @@ nav ul li:hover {
     flex:1;
 }
 .tone-2 {
-    background-color: #ff00aa;
+    background-color: #202020;
     height:100vh;
     flex:1;
     position:relative;
@@ -175,6 +175,106 @@ nav ul li:hover {
     box-shadow: 3px 1rem 2rem rgba(0,0,0,.3);
     transform: translateY(-1rem);
 }
+a {
+    text-decoration:none;
+  }
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .box h1 {
+    margin: 0 0 40px;
+    padding: 10px;;
+    color: rgb(56, 56, 56);
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;
+  }
+  .box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #757575;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  .box input[type="Submit"] {
+    background: transparent;
+    border: none;
+    color: #fff;
+    background: #F73C01;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: 1s;
+  }
+  .submit:hover {
+    transform: scale(1.1);
+  }
+  .button {
+    /* margin: 55px 0 0 0; */
+  }
+  
+  .newUser {
+    position: absolute;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  .newUser a {
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+  }
+  a:hover {
+    color: #8b2422;
+  }
+  .forgot  {
+    color:#fff;
+    margin-top:-10px;
+    font-size: 14px;
+    padding:8px 8px 0 0;
+    transition:1s;
+  }
+  .forgot:hover  {
+    cursor: pointer;
+    color: #8b2422;
+    
+  }
 @media screen and (max-width:1200px){
     .tone-2 img {
         left:-8rem;
