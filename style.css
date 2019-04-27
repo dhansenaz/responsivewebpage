@@ -308,6 +308,9 @@ a {
         display:flex;
     
     }
+    .box {
+        left:25%;
+    }
     nav ul li {
         padding:0 1.5rem;
         line-height: 5rem;
@@ -409,6 +412,12 @@ a {
     .btn {
         padding: .7rem;
         font-size: .8rem;
+    }
+    .box {
+        width:175px;
+        left:50%;
+        z-index: 1000;
+        top:55%;
     }
 }
 
