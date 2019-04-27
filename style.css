@@ -105,12 +105,14 @@ nav ul li:hover {
 }
 
 .tone-1 {
-    background-color: #f7f7f6;
+    /* background-color: #f7f7f6; */
+    background:url('images/yellow.jpg');
+    background-size: cover;
     height:100vh;
     flex:1;
 }
 .tone-2 {
-    background-color: #202020;
+    background-color:#332700;
     height:100vh;
     flex:1;
     position:relative;
@@ -185,7 +187,7 @@ a {
     transform: translate(-50%, -50%);
     width: 300px;
     padding: 20px;
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -193,7 +195,7 @@ a {
   .box h1 {
     margin: 0 0 40px;
     padding: 10px;;
-    color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
     text-align: center;
   }
   
@@ -204,7 +206,7 @@ a {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
@@ -217,7 +219,7 @@ a {
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
     pointer-events: none;
     transition: 0.5s;
   }
@@ -233,7 +235,7 @@ a {
     background: transparent;
     border: none;
     color: #fff;
-    background: #F73C01;
+    background: #EFD133;
     cursor: pointer;
     border-radius: 5px;
     padding: 10px;
@@ -325,6 +327,10 @@ a {
     }
     .btn {
         padding:1rem;
+    }
+    .box {
+        width:200px;
+        left:25%;
     }
     nav {
         display: flex;
