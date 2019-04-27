@@ -332,8 +332,9 @@ a {
         padding:1rem;
     }
     .box {
-        width:200px;
-        left:25%;
+        width:250px;
+        left:50%;
+        z-index: 1000;
     }
     nav {
         display: flex;
@@ -414,7 +415,7 @@ a {
         font-size: .8rem;
     }
     .box {
-        width:175px;
+        width:200px;
         left:50%;
         z-index: 1000;
         top:55%;
