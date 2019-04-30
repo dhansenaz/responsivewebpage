@@ -1,4 +1,4 @@
-* {
+* :before, :after{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -37,33 +37,35 @@ a {
 .logo-apex {
     position: absolute;
     left:50%;
-    top:50%;
+    top:15%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    opacity: .2;
+    opacity: .8;
     
 }
 .logo-apex > img {
-    width:150px;
+    width:100px;
 }
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1005; /* Sit on top */
-    left: 50%;
+    left: 65%;
     top: 20%;
-    width: 50%; /* Full width */
-    height: 50%; /* Full height */
+    opacity:.9;
+    width: 20%; /* Full width */
+    height: 60%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation: fade 1s;
   }
   .modal-content {
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 45% auto; /* 15% from the top and centered */
     padding: 20px;
     color:white;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     width: 80%; /* Could be more or less, depending on screen size */
   }
   .close {
@@ -75,7 +77,7 @@ a {
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: rgb(151, 151, 151);
     text-decoration: none;
     cursor: pointer;
   }
@@ -87,6 +89,11 @@ a {
 .fa-times {
     display: none;
     cursor: pointer;
+}
+.car-make {
+    font-weight:100;
+    position: relative;
+    margin:0;
 }
 nav {
     position: relative;
@@ -158,7 +165,7 @@ nav ul li:hover {
     flex:1;
 }
 .tone-2 {
-    background-color:#332700;
+    background-color:#271e00;
     height:100vh;
     flex:1;
     position:relative;
@@ -239,8 +246,8 @@ a {
     border-radius: 10px;
   }
   .box h1 {
-    margin: 0 0 40px;
-    padding: 10px;;
+    margin-top:120px;
+    padding: 20px;;
     color: rgb(255, 255, 255);
     text-align: center;
   }
@@ -294,6 +301,54 @@ a {
   .button {
     /* margin: 55px 0 0 0; */
   }
+  .container {
+    margin: 34px auto;
+    width: 260px;
+    background-color: transparent;
+  }
+  
+  div.dropdown {
+    position: relative;
+  }
+  
+  div.dropdown > div.caption {
+    background-color: #f2f2f2;
+    padding: 11px 24px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  div.dropdown > div.list {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    display: none;
+  }
+  
+  div.dropdown > div.list > div.item {
+    padding: 11px 24px;
+    cursor: pointer;
+  }
+  
+  div.dropdown > div.list > div.item.selected {
+    font-weight: bold;
+  }
+  
+  div.dropdown > div.caption:hover,
+  div.dropdown > div.list > div.item:hover {
+    background-color: rgb(83, 161, 214);
+    color: #fff;
+  }
+  
+  div.dropdown.open > div.caption {
+    border-radius: 3px 3px 0 0;
+    border-bottom: solid 1px #999;
+  }
+  
+  div.dropdown.open > div.list {
+    display: block;
+  }
   
   .newUser {
     position: absolute;
@@ -322,6 +377,14 @@ a {
     cursor: pointer;
     color: #8b2422;
     
+  }
+  @keyframes fade {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
   }
 @media screen and (max-width:1200px){
     .tone-2 img {
@@ -370,6 +433,7 @@ a {
     .tone-2 img {
         left:-2.5rem;
     }
+    .modal
     .product-info p {
         font-size: 1.2rem;
 

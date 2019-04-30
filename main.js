@@ -1,8 +1,31 @@
 let modal = document.getElementById('myModal');
 let btn = document.getElementById('button');
-let span = document.getElementsByName('close')[0];
+let span = document.getElementsByClassName('close')[0];
 
-
+$(function() {
+  
+    $('.dropdown > .caption').on('click', function() {
+      $(this).parent().toggleClass('open');
+    });
+    
+    $('.dropdown > .list > .item').on('click', function() {
+      $('.dropdown > .list > .item').removeClass('selected');
+      $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text( $(this).text() );
+    });
+    
+    $(document).on('keyup', function(evt) {
+      if ( (evt.keyCode || evt.which) === 27 ) {
+        $('.dropdown').removeClass('open');
+      }
+    });
+    
+    $(document).on('click', function(evt) {
+      if ( $(evt.target).closest(".dropdown > .caption").length === 0 ) {
+        $('.dropdown').removeClass('open');
+      }
+    });
+    
+  });
 $(function () {
     $('.menu-toggle, .fa-times').on('click', function () {
         $('nav').toggleClass('active');
