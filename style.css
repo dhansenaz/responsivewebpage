@@ -245,8 +245,11 @@ a {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
-  .box h1 {
+  .call-to-action{
     margin-top:120px;
+  }
+  .box h1 {
+    /* margin-top:120px; */
     padding: 20px;;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -299,13 +302,13 @@ a {
     transform: scale(1.1);
   }
   .button {
-    /* margin: 55px 0 0 0; */
+    margin: 55px 0 0 0;
   }
-  .container {
+  /* .container {
     margin: 34px auto;
     width: 260px;
     background-color: transparent;
-  }
+  } */
   
   div.dropdown {
     position: relative;
