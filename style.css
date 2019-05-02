@@ -91,7 +91,7 @@ a {
   font-weight: 100;
   position: relative;
   /* margin-left: -80px; */
-  padding:10px;
+  padding: 10px;
 }
 nav {
   position: relative;
@@ -330,7 +330,7 @@ div.dropdown > div.list > div.item.selected {
 
 div.dropdown > div.caption:hover,
 div.dropdown > div.list > div.item:hover {
-  background-color: #EFD033;
+  background-color: #efd033;
   color: #fff;
 }
 
