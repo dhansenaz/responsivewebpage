@@ -315,6 +315,7 @@ div.dropdown > div.list {
   width: 100%;
   border-radius: 0 0 3px 3px;
   display: none;
+  font-size: 10px;
 }
 
 div.dropdown > div.list > div.item {
@@ -328,7 +329,7 @@ div.dropdown > div.list > div.item.selected {
 
 div.dropdown > div.caption:hover,
 div.dropdown > div.list > div.item:hover {
-  background-color: #00aeff;
+  background-color: #EFD033;
   color: #fff;
 }
 
