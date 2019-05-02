@@ -1,6 +1,7 @@
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("button");
 let span = document.getElementsByClassName("close")[0];
+let box = document.getElementById('box');
 
 $(function() {
   $(".dropdown > .caption").on("click", function() {
@@ -46,6 +47,7 @@ $(function() {
 
 btn.onclick = function() {
   modal.style.display = "block";
+  box.style.display = 'none';
 };
 
 span.onclick = function() {
