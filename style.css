@@ -49,16 +49,16 @@ a {
   left: 15%;
   top: 20%;
   opacity: 0.9;
-  width: 15%; /* Full width */
-  height: 65%; /* Full height */
+  width: 15%; 
+  height: 65%; 
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgb(0, 0, 0); 
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
   animation: fade 1s;
   border-radius: 10px;
 }
 .modal-content {
-  margin: 35% auto; /* 15% from the top and centered */
+  margin: 35% auto; 
   padding: 20px;
   color: white;
   /* border: 1px solid #888; */
@@ -277,6 +277,8 @@ a {
   letter-spacing: 2px;
 }
 .box input[type="Submit"] {
+  margin:34px auto;
+  width:260px;
   background: transparent;
   border: none;
   color: #fff;
@@ -288,16 +290,17 @@ a {
   transition: 1s;
 }
 .submit:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .button {
   margin: 55px 0 0 0;
+  width:200px;
 }
-/* .container {
+.container {
     margin: 34px auto;
     width: 260px;
     background-color: transparent;
-  } */
+  }
 
 div.dropdown {
   position: relative;
